@@ -34,7 +34,7 @@ pub struct Track {
     pub album_disliked: bool,
 
     /// Is the album for this track loved?
-    pub album_loved: bool,
+    pub album_favorited: bool,
 
     /// The rating of the album for this track (0 to 100)
     pub album_rating: Option<i16>,
@@ -133,7 +133,7 @@ pub struct Track {
     pub long_description: Option<String>,
 
     /// Is this track loved?
-    pub loved: bool,
+    pub favorited: bool,
 
     /// The lyrics of the track
     pub lyrics: Option<String>,

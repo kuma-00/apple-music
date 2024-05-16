@@ -33,7 +33,7 @@ pub struct Playlist {
     pub duration: Option<f32>,
 
     /// Is this playlist loved?
-    pub loved: bool,
+    pub favorited: bool,
 
     /// Folder which contains this playlist (if any)
     pub parent: Option<Box<Playlist>>,

@@ -45,7 +45,7 @@ impl ScriptController {
             }
         }
 
-        let output_str = String::from_utf8_lossy(&data.stdout);
+        let output_str = String::from_utf8_lossy(&data.stdout).to_string();
 
         return match serde_json::from_str::<T>(&output_str) {
             Ok(data) => Ok(data),
